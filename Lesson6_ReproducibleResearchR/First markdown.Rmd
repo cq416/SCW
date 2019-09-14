@@ -2,7 +2,9 @@
 title: "My First Markdown"
 author: "Chuchu Qin"
 date: "9/14/2019"
-output: html_document
+output:
+  pdf_document: default
+  html_document: default
 ---
 
 Bold -**bold**
@@ -45,5 +47,4 @@ ggplot(data = gapminder, aes(x = gdpPercap, y = lifeExp, color = continent)) +
 ```
 
 
-The mean life expectacy of Sweden is `
-mean(gapminder[gapminder$country == "Sweden", "lifeExp"])`.
+The mean life expectacy of Sweden is `r mean(gapminder[gapminder$country == "Sweden", "lifeExp"])`.
